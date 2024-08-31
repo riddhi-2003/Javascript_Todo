@@ -1,0 +1,76 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    background: linear-gradient(90deg, #324c81, #89559c);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+    position: relative;
+}
+.todo{
+    width: 420px;
+    padding: 20px 30px;
+    background-color: #fff;
+    color: rgb(23, 23, 109);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    position: absolute;
+    top: 200px;
+}  
+
+input{
+    margin: 20px 0px 25px;
+    padding: 10px 40px;
+    border: 2px solid #f1ecec;
+    background-color: #f1ecec;
+    border-right: none;
+    outline: none;
+    border-radius: 20px;
+}
+ 
+button{
+    padding: 10px 30px ;
+    border-left: none;
+    outline: none;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 20px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px;
+    margin-bottom: 10px ;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    background-color: red;
+}   
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+#list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+#list-container li{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    cursor: pointer;
+}
+
+#list-container li:hover{
+    background-color: #edeef0;
+    padding: 3px;
+}
